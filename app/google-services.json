@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "329823073012",
+    "firebase_url": "https://cscb07-projectd-default-rtdb.firebaseio.com",
+    "project_id": "cscb07-projectd",
+    "storage_bucket": "cscb07-projectd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:329823073012:android:5629c55d426be24e3764a1",
+        "android_client_info": {
+          "package_name": "com.example.cscb07_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAvvXNnFaTTKjFfCwWnaemhN6aWdI9DYM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
