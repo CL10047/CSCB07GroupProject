@@ -52,8 +52,9 @@ public class EventCreation extends AppCompatActivity {
                 String eventDepartment = inputEventDepartment.getText().toString();
                 String eventDescription = "N/A";
 
-                if (inputEventDescription.length() != 0)
+                if (inputEventDescription.length() != 0) {
                     eventDate = inputEventDescription.getText().toString();
+                }
 
                 try {if (!verifyInput(eventName, eventDate, maxAttendees, eventLocation,
                         eventDepartment)) {
