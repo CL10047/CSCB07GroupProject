@@ -20,35 +20,41 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ComplaintView extends AppCompatActivity {
+public class ComplaintActivity extends AppCompatActivity {
+    Button home;
     RecyclerView recyclerView;
     List<DataClass> dataList;
-    MyAdapter adapter;
     DatabaseReference databaseReference;
     ValueEventListener eventListener;
-    Button home;
+
+    MyAdapter adapter;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_complaint_view);
+        setContentView(R.layout.activity_complaint);
 
-        recyclerView = findViewById(R.id.recyclerView);
-
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(ComplaintView.this, 1);
-        recyclerView.setLayoutManager(gridLayoutManager);
-
-        dataList = new ArrayList<>();
-        adapter = new MyAdapter(this, dataList);
-        recyclerView.setAdapter(adapter);
+        getSupportActionBar().hide();
 
         home = findViewById(R.id.home);
+        recyclerView = findViewById(R.id.recyclerView);
 
-        AlertDialog.Builder builder= new AlertDialog.Builder(ComplaintView.this);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(ComplaintActivity.this, 1);
+        recyclerView.setLayoutManager(gridLayoutManager);
+
+        AlertDialog.Builder builder= new AlertDialog.Builder(ComplaintActivity.this);
         builder.setCancelable(false);
+        builder.setView(R.layout.progress_layout);
         AlertDialog dialog = builder.create();
         dialog.show();
+
+
+        dataList = new ArrayList<>();
+
+        adapter = new MyAdapter(ComplaintActivity.this, dataList);
+        recyclerView.setAdapter(adapter);
 
         databaseReference = FirebaseDatabase.getInstance().getReference("complaints");
         dialog.show();

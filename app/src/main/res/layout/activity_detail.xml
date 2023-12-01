@@ -6,8 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/white"
-    tools:context=".DetailActivity">
+    tools:context=".DetailActivity"
+
+    android:background="@color/white">
     
     <TextView
         android:layout_width="wrap_content"
@@ -18,7 +19,7 @@
         android:textSize="24sp"
         android:layout_gravity="center"
         android:layout_marginBottom="12dp"
-        android:textColor="@color/design_default_color_primary"/>
+        android:textColor="@color/black"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -29,7 +30,7 @@
         android:textSize="24sp"
         android:layout_gravity="center"
         android:layout_marginBottom="12dp"
-        android:textColor="@color/design_default_color_primary"/>
+        android:textColor="@color/black"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -40,6 +41,6 @@
         android:layout_gravity="center"
         android:id="@+id/detailDesc"
         android:textSize="18sp"
-        android:textColor="@color/design_default_color_primary"/>
+        android:textColor="@color/black"/>
 
 </LinearLayout>
