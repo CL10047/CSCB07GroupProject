@@ -40,7 +40,10 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment:2.7.5")
     implementation("androidx.navigation:navigation-ui:2.7.5")
     implementation(platform("com.google.firebase:firebase-bom:32.5.0"))
+<<<<<<< HEAD
     implementation("com.google.firebase:firebase-auth:22.3.0")
+=======
+>>>>>>> d8a8787a417949ac4681648dd7cc4a62f74f94eb
     implementation("com.google.firebase:firebase-database:20.3.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
