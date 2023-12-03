@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.database.DataSnapshot;
 
-public class LoginPresenter extends AppCompatActivity {
+public class LoginPresenter {
 
     LoginModel model;
     LoginView view;
@@ -19,12 +19,14 @@ public class LoginPresenter extends AppCompatActivity {
         this.view = view;
     }
 
+    //Checks if username and password are empty. If they aren't, it checks to see if they appear
+    //on the database
     public void checkDB(String username, String password) {
-        if (TextUtils.isEmpty(username)) {
+        if (username.equals("")) {
             view.setWarning("Enter username");
             view.setToast("Enter username");
             return;
-        } else if (TextUtils.isEmpty(password)) {
+        } else if (password.equals("")) {
             view.setWarning("Enter password");
             view.setToast("Enter password");
             return;
@@ -33,15 +35,17 @@ public class LoginPresenter extends AppCompatActivity {
         }
     }
 
+    //Checks if username and password are valid credentials, sending warnings if they aren't and
+    //sending the user to the appropriate page if they are valid
     public void checkCredentials(DataSnapshot snapshot, String username, String password) {
 
-        if (snapshot.hasChild(username)) {
-            String getPassword = snapshot.child(username).child("password").getValue(String.class);
+        if (model.checkChild(snapshot, username)) {
+            String getPassword = model.getPassword(snapshot, username);
             if (getPassword.equals(password)){
                 view.setWarning("Login Successful");
                 view.setToast("Login Successful");
 
-                if (snapshot.child(username).child("admin").getValue(Boolean.class) == true){
+                if (model.isAdmin(snapshot, username)){
                     view.adminLogin();
                 }
                 else{

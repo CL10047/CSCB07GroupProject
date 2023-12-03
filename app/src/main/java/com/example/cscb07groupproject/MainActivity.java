@@ -4,6 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.ui.NavigationUI;
 
 import android.view.View;
 
@@ -18,10 +21,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    FirebaseAuth auth;
     Button button;
     TextView textView;
-    FirebaseUser user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -37,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-              //  FirebaseAuth.getInstance().signOut();
                 Intent intent = new Intent(getApplicationContext(), LoginView.class);
                 startActivity(intent);
                 finish();
@@ -78,11 +78,11 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    /*
+
     @Override
     public boolean onSupportNavigateUp() {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, appBarConfiguration)
                 || super.onSupportNavigateUp();
-    }*/
+    }
 }

@@ -60,6 +60,7 @@ public class ComplaintActivity extends AppCompatActivity {
         dialog.show();
 
         eventListener = databaseReference.addValueEventListener(new ValueEventListener() {
+            //Makes a list with all the complaints and updates automatically if they change
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 dataList.clear();
@@ -80,11 +81,11 @@ public class ComplaintActivity extends AppCompatActivity {
 
         adapter.notifyDataSetChanged();
 
+        //Button to return to the main page
         home.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                //  FirebaseAuth.getInstance().signOut();
                 Intent intent = new Intent(getApplicationContext(), AdminActivity.class);
                 startActivity(intent);
                 finish();

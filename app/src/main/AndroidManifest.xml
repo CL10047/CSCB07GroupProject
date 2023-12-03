@@ -54,6 +54,12 @@
             android:name=".EventCreation"
             android:exported="false"
             android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+        <activity
+            android:name=".LoginPresenter"
+            android:exported="false" />
+        <activity
+            android:name=".LoginModel"
+            android:exported="false" />
 
 
     </application>

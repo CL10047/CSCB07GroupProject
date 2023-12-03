@@ -33,24 +33,12 @@ public class Register extends AppCompatActivity {
     Switch admin;
 
     Boolean isAdmin;
-/*
-    @Override
-    public void onStart() {
-        super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        if(currentUser != null){
-            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-            startActivity(intent);
-            finish();
-        }
-    }*/
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-      //  mAuth = FirebaseAuth.getInstance();
         editTextEmail = findViewById(R.id.email);
         editTextPassword = findViewById(R.id.password);
         buttonReg = findViewById(R.id.Register_button);
@@ -68,6 +56,7 @@ public class Register extends AppCompatActivity {
             }
         });
 
+        //Lever to choose if user will register as admin or not
         admin.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -80,19 +69,22 @@ public class Register extends AppCompatActivity {
             }
         });
 
+        //Button to upload credentials on database, while also giving warnings to user
         buttonReg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 ProgressBar.setVisibility(View.VISIBLE);
-                String email, password;
-                email = String.valueOf(editTextEmail.getText());
+                String username, password;
+                username = String.valueOf(editTextEmail.getText());
                 password = String.valueOf(editTextPassword.getText());
 
-                if (TextUtils.isEmpty(email)){
-                    Toast.makeText(Register.this,"Enter email", Toast.LENGTH_SHORT).show();
+                //warns user that username is empty
+                if (TextUtils.isEmpty(username)){
+                    Toast.makeText(Register.this,"Enter username", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
+                //warns user that password is empty
                 else if (TextUtils.isEmpty(password)){
                     Toast.makeText(Register.this,"Enter password", Toast.LENGTH_SHORT).show();
                     return;
@@ -101,12 +93,15 @@ public class Register extends AppCompatActivity {
                     databaseReference.child("users").addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
-                            if (snapshot.hasChild(email)) {
+                            //Warn user that username already exists
+                            if (snapshot.hasChild(username)) {
                                 Toast.makeText(Register.this, "Username already registered.", Toast.LENGTH_SHORT).show();
-                            } else {
-                                databaseReference.child("users").child(email).child("username").setValue(email);
-                                databaseReference.child("users").child(email).child("password").setValue(password);
-                                databaseReference.child("users").child(email).child("admin").setValue(isAdmin);
+                            }
+                            //Upload username and password to database, and send user back to Login
+                            else {
+                                databaseReference.child("users").child(username).child("username").setValue(username);
+                                databaseReference.child("users").child(username).child("password").setValue(password);
+                                databaseReference.child("users").child(username).child("admin").setValue(isAdmin);
 
                                 Toast.makeText(Register.this, "Account Created", Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(getApplicationContext(), LoginView.class);
@@ -121,27 +116,6 @@ public class Register extends AppCompatActivity {
                         }
                     });
                 }
-
-/*
-                mAuth.createUserWithEmailAndPassword(email, password)
-                        .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                ProgressBar.setVisibility(View.GONE);
-                                if (task.isSuccessful()) {
-                                     Toast.makeText(Register.this, "Account Created",
-                                             Toast.LENGTH_SHORT).show();
-                                    Intent intent = new Intent(getApplicationContext(),Register.class);
-                                    startActivity(intent);
-                                    finish();
-                                } else {
-                                    // If sign in fails, display a message to the user.
-                                    Toast.makeText(Register.this, task.getException().getLocalizedMessage(),
-                                            Toast.LENGTH_SHORT).show();
-
-                                }
-                            }
-                        });*/
             }
         });
     }
