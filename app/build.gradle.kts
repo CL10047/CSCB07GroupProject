@@ -39,14 +39,13 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.navigation:navigation-fragment:2.7.5")
     implementation("androidx.navigation:navigation-ui:2.7.5")
-<<<<<<< HEAD
+
     implementation(platform("com.google.firebase:firebase-bom:32.5.0"))
 
     implementation("com.google.firebase:firebase-auth:22.3.0")
 
-=======
     implementation(platform("com.google.firebase:firebase-bom:32.6.0"))
->>>>>>> POStQual_ViewEvents
+
     implementation("com.google.firebase:firebase-database:20.3.0")
     testImplementation("junit:junit:4.13.2")
     testImplementation("org.mockito:mockito-core:4.7.0")

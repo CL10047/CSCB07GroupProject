@@ -24,8 +24,6 @@
         <item>Class not attempted</item>
     </string-array>
 
-<<<<<<< HEAD
-
     <string name="login">Login</string>
     <string name="email">Username</string>
     <string name="password">Password</string>
@@ -50,7 +48,7 @@
     <string name="event_description">Event Description (Optional)</string>
     <string name="btn_create">Create Event</string>
     <string name="event_creation">Event Creation</string>
-=======
+
     <string name="lorem_ipsum">
         Lorem ipsum d
     </string>
@@ -77,5 +75,4 @@
     <string name="homepage_title">Home\nPage</string>
     <string name="events_text">Events</string>
     <string name="announcement">Announcement</string>
->>>>>>> POStQual_ViewEvents
 </resources>

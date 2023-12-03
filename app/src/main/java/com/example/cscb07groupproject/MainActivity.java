@@ -10,6 +10,7 @@ import androidx.navigation.ui.NavigationUI;
 
 import android.view.View;
 
+import com.example.cscb07groupproject.databinding.ActivityMainBinding;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -29,22 +30,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-<<<<<<< HEAD
 
         button = findViewById(R.id.log_out);
         textView = findViewById(R.id.user_details);
 
-=======
-            binding = ActivityMainBinding.inflate(getLayoutInflater());
-            setContentView(binding.getRoot());
 
-            setSupportActionBar(binding.toolbar);
+//            binding = ActivityMainBinding.inflate(getLayoutInflater());
+//            setContentView(binding.getRoot());
+//
+//            setSupportActionBar(binding.toolbar);
 //
 //            NavController navController = Navigation.findNavController(this,
 //                    R.id.action_SecondFragment_to_FirstFragment);
 //            appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
 //            NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
->>>>>>> POStQual_ViewEvents
+
 
         button.setOnClickListener(new View.OnClickListener() {
 
@@ -91,10 +91,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    @Override
-    public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
-        return NavigationUI.navigateUp(navController, appBarConfiguration)
-                || super.onSupportNavigateUp();
-    }
+//    @Override
+//    public boolean onSupportNavigateUp() {
+//        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
+//        return NavigationUI.navigateUp(navController, appBarConfiguration)
+//                || super.onSupportNavigateUp();
+//    }
 }
