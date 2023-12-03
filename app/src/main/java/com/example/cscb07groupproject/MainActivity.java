@@ -28,14 +28,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+            binding = ActivityMainBinding.inflate(getLayoutInflater());
+            setContentView(binding.getRoot());
 
-        setSupportActionBar(binding.toolbar);
-
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
-        appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
+            setSupportActionBar(binding.toolbar);
+//
+//            NavController navController = Navigation.findNavController(this,
+//                    R.id.action_SecondFragment_to_FirstFragment);
+//            appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
+//            NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
         binding.fab.setOnClickListener(new View.OnClickListener() {
             @Override
