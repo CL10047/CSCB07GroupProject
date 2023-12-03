@@ -29,10 +29,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+<<<<<<< HEAD
 
         button = findViewById(R.id.log_out);
         textView = findViewById(R.id.user_details);
 
+=======
+            binding = ActivityMainBinding.inflate(getLayoutInflater());
+            setContentView(binding.getRoot());
+
+            setSupportActionBar(binding.toolbar);
+//
+//            NavController navController = Navigation.findNavController(this,
+//                    R.id.action_SecondFragment_to_FirstFragment);
+//            appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
+//            NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
+>>>>>>> POStQual_ViewEvents
 
         button.setOnClickListener(new View.OnClickListener() {
 

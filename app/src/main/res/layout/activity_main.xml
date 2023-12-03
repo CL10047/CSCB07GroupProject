@@ -19,7 +19,16 @@
         android:text="@string/log_out"
         android:id="@+id/log_out"
         android:layout_width="wrap_content"
+<<<<<<< HEAD
         android:layout_height="wrap_content"/>
+=======
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/pageTitle"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+>>>>>>> POStQual_ViewEvents
 
     <Button
         android:text="@string/event_creation"

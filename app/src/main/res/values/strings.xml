@@ -6,7 +6,25 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="program_type_title">Program Type</string>
+    <string-array name="grades_array">
+        <item>SELECT A GRADE</item>
+        <item>89-100</item>
+        <item>80-84</item>
+        <item>77-79</item>
+        <item>73-76</item>
+        <item>70-72</item>
+        <item>67-69</item>
+        <item>63-66</item>
+        <item>60-62</item>
+        <item>57-59</item>
+        <item>53-56</item>
+        <item>50-52</item>
+        <item>0-49</item>
+        <item>Class not attempted</item>
+    </string-array>
 
+<<<<<<< HEAD
 
     <string name="login">Login</string>
     <string name="email">Username</string>
@@ -32,4 +50,32 @@
     <string name="event_description">Event Description (Optional)</string>
     <string name="btn_create">Create Event</string>
     <string name="event_creation">Event Creation</string>
+=======
+    <string name="lorem_ipsum">
+        Lorem ipsum d
+    </string>
+    <string name="pageTitle">POst Qualification Checker</string>
+    <string name="stream_checkbox">Check this box if you an Out-of-Stream student</string>
+    <string name="check_qual_button">Check Qualifications</string>
+    <string name="a48_title">CSCA48</string>
+    <string name="a67_title">CSCA/MATA67</string>
+    <string name="a22_title">MATA22</string>
+    <string name="a37_title">MATA37</string>
+    <string name="a31_title">MATA31</string>
+    <string name="intial_gpa">GPA: 0.0</string>
+    <string name="a48_low">CSCA48 has a final grade lower than the required 73%</string>
+    <string name="gpa_low">GPA is lower than the required 2.5</string>
+    <string name="a67_low">2 or more of MATA37, MATA22 and CSCA/MATA67 have a final grade lower
+        than the required 60%</string>
+    <string name="all_good">Congratulations!\nYou have met all requirements!\n(make sure to meet with an academic advisor to confirm)</string>
+    <string name="title_activity_view_events_student">ViewEventsStudent</string>
+    <string name="title_activity_view_specific_event_student">ViewSpecificEventStudent</string>
+    <string name="view_event_title">All Events</string>
+    <string name="btn_rsvp">RSVP for event</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="homepage_title">Home\nPage</string>
+    <string name="events_text">Events</string>
+    <string name="announcement">Announcement</string>
+>>>>>>> POStQual_ViewEvents
 </resources>

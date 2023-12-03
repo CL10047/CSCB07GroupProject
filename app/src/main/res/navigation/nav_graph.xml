@@ -25,4 +25,14 @@
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/postQualFragment"
+        android:name="com.example.cscb07groupproject.PostQualFragment"
+        android:label="fragment_post_qual"
+        tools:layout="@layout/fragment_post_qual" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.cscb07groupproject.MainActivity"
+        android:label="activity_view_event_student"
+        tools:layout="@layout/activity_view_event_student" />
 </navigation>

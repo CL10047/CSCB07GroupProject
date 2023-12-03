@@ -19,6 +19,7 @@
         android:theme="@style/Theme.MaterialComponents"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".DetailActivity"
             android:exported="false" />
         <activity
@@ -26,6 +27,18 @@
             android:exported="false" />
         <activity
             android:name=".AdminActivity"
+=======
+            android:name=".PostQualifications"
+            android:exported="false" />
+        <activity
+            android:name=".ViewSpecificEventStudent"
+            android:exported="false" />
+        <activity
+            android:name=".ViewEventStudent"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+>>>>>>> POStQual_ViewEvents
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.CSCB07GroupProject" />
@@ -43,6 +56,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity
 
             android:name=".MainActivity"
@@ -62,6 +76,12 @@
             android:exported="false" />
 
 
+=======
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+>>>>>>> POStQual_ViewEvents
     </application>
 
 </manifest>
