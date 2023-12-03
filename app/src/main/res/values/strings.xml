@@ -4,6 +4,8 @@
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
+    <string name="complaints_fragment_label">Complaints Fragment</string>
+    <string name="events_fragment_label">Events Students Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
@@ -43,4 +45,27 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="rate_this_event">Rate this event</string>
+    <string name="enter_complaint">Enter your complaint</string>
+    <string name="enter_topic">Enter topic of your complaint</string>
+    <string name="submit_complaint">Submit complaint</string>
+    <string name="complaints_section">Complaints Section</string>
+    <string name="write_review">Write Review</string>
+    <string name="submit_review">Submit review</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="event_name">Event Name</string>
+    <string name="event_info">Event Location | Event Date</string>
+    <string name="event_date">Event Date (DD/MM/YYYY)</string>
+    <string name="max_attendees"># of Max Attendees</string>
+    <string name="event_location">Event Location</string>
+    <string name="event_department">Event Department</string>
+    <string name="event_description">Event Description, Max 100 Characters (Optional)</string>
+    <string name="btn_create">Create Event</string>
+
+    <string name="view_event_title">View Events</string>
+    <string name="search_bar_text">Search Event by Name</string>
+    <string name="btn_search">Search</string>
+    <string name="reviews">reviews</string>
 </resources>
