@@ -14,12 +14,8 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -66,7 +62,7 @@ public class Register extends AppCompatActivity {
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),Login.class);
+                Intent intent = new Intent(getApplicationContext(), LoginView.class);
                 startActivity(intent);
                 finish();
             }
@@ -113,7 +109,7 @@ public class Register extends AppCompatActivity {
                                 databaseReference.child("users").child(email).child("admin").setValue(isAdmin);
 
                                 Toast.makeText(Register.this, "Account Created", Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(getApplicationContext(),Login.class);
+                                Intent intent = new Intent(getApplicationContext(), LoginView.class);
                                 startActivity(intent);
                                 finish();
                             }

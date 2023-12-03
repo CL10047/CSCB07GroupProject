@@ -1,11 +1,10 @@
 buildscript {
-<<<<<<< HEAD
+
     repositories{
         google()
         mavenCentral()
     }
-=======
->>>>>>> d8a8787a417949ac4681648dd7cc4a62f74f94eb
+
     dependencies {
         classpath("com.google.gms:google-services:4.4.0")
     }
