@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:ignore="ExtraText">
+    tools:ignore="ExtraText"
+    android:background="@color/background_color">
 
 
     <TextView
@@ -17,6 +18,7 @@
         android:background="@drawable/ic_launcher_background"
         android:fontFamily="sans-serif-black"
         android:text="@string/complaints_section"
+        android:textColor="@color/txt_color"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,6 +30,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:hint="@string/enter_complaint"
+        android:textColorHint="@color/txt_color"
         android:inputType="textMultiLine"
         android:minLines="3"
         app:layout_constraintBottom_toTopOf="@+id/buttonSubmitComplaint"
@@ -47,6 +50,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:textColorHint="@color/txt_color"
         android:hint="@string/enter_topic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.156"
@@ -58,13 +62,25 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:backgroundTint="@color/screenBackground"
-        android:textColor="@android:color/white"
-        android:text="@string/submit_complaint"
+        android:backgroundTint="@color/btn_color"
         android:radius="8dp"
+        android:text="@string/submit_complaint"
+        android:textColor="@color/background_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextComplaint" />
+
+    <Button
+        android:id="@+id/previousButton"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="640dp"
+        android:backgroundTint="@color/btn_color"
+        app:icon="@drawable/baseline_arrow_back_ios_24"
+        app:iconTint="@color/background_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

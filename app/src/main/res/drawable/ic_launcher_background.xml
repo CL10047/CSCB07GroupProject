@@ -8,6 +8,6 @@
         android:fillColor="@color/screenBackground"
         android:pathData="M0,50L108,50"
         android:strokeWidth="10"
-        android:strokeColor="@color/screenBackground" />
+        android:strokeColor="@color/btn_color" />
 
 </vector>
