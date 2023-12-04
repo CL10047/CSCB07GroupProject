@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -19,9 +25,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CSCB07GroupProject"
+        android:theme="@style/Theme.MaterialComponents"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".StudentComplaintActivity"
             android:exported="false" />
         <activity
@@ -57,18 +64,71 @@
         </activity>
         <activity
             android:name=".DetailsActivity"
+=======
+<<<<<<< HEAD
+            android:name=".DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ComplaintActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivity"
+=======
+            android:name=".PostQualifications"
+            android:exported="false" />
+        <activity
+            android:name=".ViewSpecificEventStudent"
+            android:exported="false" />
+        <activity
+            android:name=".ViewEventStudent"
+>>>>>>> c360f7c18711afe8b6dfa6fd89eb1d1f7c914d6f
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+>>>>>>> POStQual_ViewEvents
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.CSCB07GroupProject">
+            android:theme="@style/Theme.CSCB07GroupProject" />
+        <activity
+            android:name=".Register"
+            android:exported="false"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+        <activity
+            android:name=".LoginView"
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
+        <activity
+
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.CSCB07GroupProject" />
+
+        <activity
+            android:name=".EventCreation"
+            android:exported="false"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+        <activity
+            android:name=".LoginPresenter"
+            android:exported="false" />
+        <activity
+            android:name=".LoginModel"
+            android:exported="false" />
+
+
+=======
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+>>>>>>> POStQual_ViewEvents
     </application>
 
 </manifest>
