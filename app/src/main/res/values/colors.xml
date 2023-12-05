@@ -2,4 +2,34 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+<<<<<<< HEAD
+    <color name="red">#FF0000</color>
+
+=======
+<<<<<<< HEAD
+    <color name="screenBackground">#2196F3</color>
+    <color name="background_gradient_start">#000000</color>
+    <color name="background_gradient_end">#DDDDDD</color>
+    <color name="fastlane_background">#0096a6</color>
+    <color name="search_opaque">#ffaa3f</color>
+    <color name="selected_background">#ffaa3f</color>
+    <color name="default_background">#3d3d3d</color>
+=======
+<<<<<<< HEAD
+    <color name="red">#FF0000</color>
+=======
+>>>>>>> c360f7c18711afe8b6dfa6fd89eb1d1f7c914d6f
+>>>>>>> f75e719be28c47b60165a19170b444114a8a8197
+    <color name="background_color">#121212</color>
+    <color name="btn_color">#BB86FC</color>
+    <color name="txt_color">#DEF4F5FC</color>
+    <color name="small_text_color">#99F4F5FC</color>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    />
+>>>>>>> POStQual_ViewEvents
+>>>>>>> c360f7c18711afe8b6dfa6fd89eb1d1f7c914d6f
+>>>>>>> f75e719be28c47b60165a19170b444114a8a8197
 </resources>

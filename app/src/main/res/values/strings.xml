@@ -3,44 +3,135 @@
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
+    <string name="events_students_activity_label">Events Activity</string>
+    <string name="rating_event_activity_label">Rating Activity</string>
     <string name="second_fragment_label">Second Fragment</string>
+    <string name="complaints_fragment_label">Complaints Fragment</string>
+    <string name="events_fragment_label">Events Students Fragment</string>
+    <string name="review_fragment_label">Event Rating Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="program_type_title">Program Type</string>
+    <string-array name="grades_array">
+        <item>SELECT A GRADE</item>
+        <item>89-100</item>
+        <item>80-84</item>
+        <item>77-79</item>
+        <item>73-76</item>
+        <item>70-72</item>
+        <item>67-69</item>
+        <item>63-66</item>
+        <item>60-62</item>
+        <item>57-59</item>
+        <item>53-56</item>
+        <item>50-52</item>
+        <item>0-49</item>
+        <item>Class not attempted</item>
+    </string-array>
+
+    <string name="login">Login</string>
+    <string name="email">Username</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="click_to_login">Click to Login</string>
+    <string name="click_to_register">Click to Register</string>
+    <string name="log_out">Log out</string>
+    <string name="admin">Register as Administrator</string>
+    <string name="admin_world">Admin World!</string>
+    <string name="title_activity_complaint_view">ComplaintView</string>
+    <string name="title">Title</string>
+    <string name="view_complaints">View Complaints</string>
+    <string name="home">Return Home</string>
+    <string name="date">MM/DD/YYYY</string>
+    <string name="description">Description</string>
+    <string name="loading">Loading...</string>
+    <string name="event_name">Event Name</string>
+    <string name="event_date">Event Date (DD/MM/YYYY)</string>
+    <string name="max_attendees"># of Max Attendees</string>
+    <string name="event_location">Event Location</string>
+    <string name="event_department">Event Department</string>
+    <string name="event_description">Event Description (Optional)</string>
+    <string name="btn_create">Create Event</string>
+    <string name="event_creation">Event Creation</string>
 
     <string name="lorem_ipsum">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
-        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
-        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
-        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
-        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
-        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
-        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
-        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
-        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
-        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
-        bibendum, vel congue leo egestas.\n\n
-        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
-        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
-        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
-        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
-        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
-        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
-        est.\n\n
-        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
-        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
-        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
-        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
-        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
-        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
-        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
-        convallis.\n\n
-        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
-        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
-        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
-        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
-        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
-        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
-        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+        Lorem ipsum d
     </string>
+<<<<<<< HEAD
+    <string name="rate_this_event">Rate this event</string>
+    <string name="enter_complaint">Enter your complaint</string>
+    <string name="enter_topic">Enter topic of your complaint</string>
+    <string name="submit_complaint">Submit complaint</string>
+    <string name="complaints_section">Complaints Section</string>
+    <string name="write_review">Write Review</string>
+    <string name="submit_review">Submit review</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="event_name">Event Name</string>
+    <string name="event_info">Event Location | Event Date</string>
+    <string name="event_date">Event Date (DD/MM/YYYY)</string>
+    <string name="max_attendees"># of Max Attendees</string>
+    <string name="event_location">Event Location</string>
+    <string name="event_department">Event Department</string>
+    <string name="event_description">Event Description, Max 100 Characters (Optional)</string>
+    <string name="btn_create">Create Event</string>
+
+    <string name="view_event_title">View Events</string>
+    <string name="search_bar_text">Search Event by Name</string>
+    <string name="btn_search">Search</string>
+    <string name="reviews">reviews</string>
+    <string name="title_activity_events_students">Leanback EventsStudentsActivity</string>
+    <string name="browse_title">Videos by Your Company</string>
+    <string name="related_movies">Related Videos</string>
+    <string name="grid_view">Grid View</string>
+    <string name="error_fragment">Error Fragment</string>
+    <string name="personal_settings">Personal Settings</string>
+    <string name="watch_trailer_1">Watch trailer</string>
+    <string name="watch_trailer_2">FREE</string>
+    <string name="rent_1">Rent By Day</string>
+    <string name="rent_2">From $1.99</string>
+    <string name="buy_1">Buy and Own</string>
+    <string name="buy_2">AT $9.99</string>
+    <string name="movie">Movie</string>
+
+    <!-- Error messages -->
+    <string name="error_fragment_message">An error occurred</string>
+    <string name="dismiss_error">Dismiss</string>
+    <string name="title_activity_rating_event_actvity">Leanback RatingEventActvity</string>
+    <string name="title_activity_review_event">Leanback ReviewEventActivity</string>
+    <string name="failure_to_get_data">Failure to get data.</string>
+=======
+    <string name="pageTitle">POst Qualification Checker</string>
+    <string name="stream_checkbox">Check this box if you an Out-of-Stream student</string>
+    <string name="check_qual_button">Check Qualifications</string>
+    <string name="a48_title">CSCA48</string>
+    <string name="a67_title">CSCA/MATA67</string>
+    <string name="a22_title">MATA22</string>
+    <string name="a37_title">MATA37</string>
+    <string name="a31_title">MATA31</string>
+    <string name="intial_gpa">GPA: 0.0</string>
+    <string name="a48_low">CSCA48 has a final grade lower than the required 73%</string>
+    <string name="gpa_low">GPA is lower than the required 2.5</string>
+    <string name="a67_low">2 or more of MATA37, MATA22 and CSCA/MATA67 have a final grade lower
+        than the required 60%</string>
+    <string name="all_good">Congratulations!\nYou have met all requirements!\n(make sure to meet with an academic advisor to confirm)</string>
+    <string name="title_activity_view_events_student">ViewEventsStudent</string>
+    <string name="title_activity_view_specific_event_student">ViewSpecificEventStudent</string>
+    <string name="view_event_title">All Events</string>
+    <string name="btn_rsvp">RSVP for event</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="homepage_title">Home\nPage</string>
+    <string name="events_text">Events</string>
+<<<<<<< HEAD
+    <string name="announcement">Bulletin\nBoard</string>
+    <string name="complaints_txt">Complaints</string>
+    <string name="review_txt">Reviews</string>
+    <string name="feedback_txt">Event\nFeedback</string>
+=======
+    <string name="announcement">Announcement</string>
+>>>>>>> POStQual_ViewEvents
+>>>>>>> c360f7c18711afe8b6dfa6fd89eb1d1f7c914d6f
+>>>>>>> f75e719be28c47b60165a19170b444114a8a8197
 </resources>
