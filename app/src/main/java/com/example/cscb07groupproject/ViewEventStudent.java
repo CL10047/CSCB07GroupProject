@@ -52,6 +52,15 @@ public class ViewEventStudent extends AppCompatActivity {
         event3.setOnClickListener(view -> getEventClicked(currentPage, 3));
         event4.setOnClickListener(view -> getEventClicked(currentPage, 4));
         event5.setOnClickListener(view -> getEventClicked(currentPage, 5));
+        //button back to homepage
+        Button back = findViewById(R.id.back_btn);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ViewEventStudent.this, StudentActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void getEventClicked(int currentPage, int index) {

@@ -4,15 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.NavigationUI;
 
 import android.view.View;
-
-import com.example.cscb07groupproject.databinding.ActivityMainBinding;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 import android.view.Menu;
 import android.view.MenuItem;
@@ -31,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        button = findViewById(R.id.log_out);
+        button = findViewById(R.id.log_out_btn);
         textView = findViewById(R.id.user_details);
 
 
@@ -60,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         btnEventCreationPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, EventCreation.class);
+                Intent intent = new Intent(MainActivity.this, StudentActivity.class);
                 startActivity(intent);
             }
         });

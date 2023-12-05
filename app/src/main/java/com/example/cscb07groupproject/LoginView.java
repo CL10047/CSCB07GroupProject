@@ -2,6 +2,7 @@ package com.example.cscb07groupproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -82,7 +83,7 @@ public class LoginView extends AppCompatActivity {
 
     //Moves user to the main page after a successful login (if the user is not an admin)
     public void userLogin(){
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        Intent intent = new Intent(getApplicationContext(), StudentActivity.class);
         startActivity(intent);
         finish();
     }

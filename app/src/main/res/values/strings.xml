@@ -74,5 +74,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="homepage_title">Home\nPage</string>
     <string name="events_text">Events</string>
-    <string name="announcement">Announcement</string>
+    <string name="announcement">Bulletin\nBoard</string>
+    <string name="complaints_txt">Complaints</string>
+    <string name="review_txt">Reviews</string>
+    <string name="feedback_txt">Event\nFeedback</string>
 </resources>

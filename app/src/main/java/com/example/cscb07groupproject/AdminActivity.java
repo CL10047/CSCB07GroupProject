@@ -6,12 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class AdminActivity extends AppCompatActivity {
-    Button button;
-    Button complaint;
-    TextView textView;
+    Button logOut;
+    LinearLayout complaint;
+    LinearLayout feedback;
+    LinearLayout createEvents;
+    LinearLayout anouncement;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,13 +22,39 @@ public class AdminActivity extends AppCompatActivity {
         setContentView(R.layout.activity_admin);
 
 
-        button = findViewById(R.id.log_out);
-        textView = findViewById(R.id.user_details);
-        complaint = findViewById(R.id.view_complaints);
+        logOut = findViewById(R.id.log_out_btn);
+        complaint = findViewById(R.id.complaints_btn);
+        feedback = findViewById(R.id.feedback_btn);
+        createEvents = findViewById(R.id.events_btn);
+        anouncement = findViewById(R.id.anouncement_btn);
 
+//        createEvents.setOnClickListener(new View.OnClickListener() {
+//
+//        @Override
+//             public void onClick(View view) {
+//                 Intent intent = new Intent(AdminActivity.this, ViewEventStudent.class);
+//                 startActivity(intent);
+//             }
+//         });
 
+//        feedback.setOnClickListener(new View.OnClickListener() {
+//
+//            @Override
+//             public void onClick(View view) {
+//                 Intent intent = new Intent(AdminActivity.this, ViewEventStudent.class);
+//                 startActivity(intent);
+//             }
+//         });
+
+        //        anouncement.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//             public void onClick(View view) {
+//                 Intent intent = new Intent(AdminActivity.this, ViewEventStudent.class);
+//                 startActivity(intent);
+//             }
+//         });
         //Button to sign out and go back to Login page
-        button.setOnClickListener(new View.OnClickListener() {
+        logOut.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {

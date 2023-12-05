@@ -47,6 +47,16 @@ public class Register extends AppCompatActivity {
         admin = findViewById(R.id.admin);
         isAdmin = false;
 
+        //button back to login
+        Button back = findViewById(R.id.back_btn);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Register.this, LoginView.class);
+                startActivity(intent);
+            }
+        });
+
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
