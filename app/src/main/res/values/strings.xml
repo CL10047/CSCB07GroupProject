@@ -46,12 +46,20 @@
     <string name="description">Description</string>
     <string name="loading">Loading...</string>
     <string name="event_name">Event Name</string>
+    <string name="event_info">Event Location | Event Date</string>
     <string name="event_date">Event Date (DD/MM/YYYY)</string>
     <string name="max_attendees"># of Max Attendees</string>
     <string name="event_location">Event Location</string>
     <string name="event_department">Event Department</string>
     <string name="event_description">Event Description (Optional)</string>
     <string name="btn_create">Create Event</string>
+
+    <string name="view_event_title">View Events</string>
+    <string name="search_bar_text">Search by Event Name</string>
+    <string name="btn_search">Search</string>
+
+    <string name="txt_feedbacks">Feedbacks</string>
+    <string name="txt_feedback">Feedback</string>
     <string name="event_creation">Event Creation</string>
 
     <string name="lorem_ipsum">

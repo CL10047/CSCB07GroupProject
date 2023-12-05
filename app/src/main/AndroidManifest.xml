@@ -122,6 +122,17 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+            android:name=".EventCreation">
+        </activity>
+        <activity
+            android:name=".ViewEventsAdmin">
+        </activity>
+        <activity
+            android:name=".ViewSpecificEventAdmin">
+        </activity>
+        <activity
+            android:name=".ViewFeedbackAdmin">
+        </activity>
     </application>
 
 </manifest>
