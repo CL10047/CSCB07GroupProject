@@ -1,8 +1,5 @@
 package com.example.cscb07groupproject;
 
-import android.text.TextUtils;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.database.DataSnapshot;
 
@@ -25,13 +22,17 @@ public class LoginPresenter {
         if (username.equals("")) {
             view.setWarning("Enter username");
             view.setToast("Enter username");
-            return;
-        } else if (password.equals("")) {
+        }
+        else if (password.equals("")) {
             view.setWarning("Enter password");
             view.setToast("Enter password");
-            return;
         } else {
-            model.queryDB(this, username, password);
+            if(username.contains(".") || username.contains("$") || username.contains("#") || username.contains("[") || username.contains("]") || username.contains("/")){
+                view.setWarning("Cannot contain characters . $ # [ ] or /");
+            }
+            else {
+                model.queryDB(this, username, password);
+            }
         }
     }
 

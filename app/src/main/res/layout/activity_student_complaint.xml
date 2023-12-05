@@ -1,0 +1,86 @@
+<!-- complaint_submission_layout.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:ignore="ExtraText"
+    android:background="@color/background_color">
+
+
+    <TextView
+        android:id="@+id/textViewHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/ic_launcher_background"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/complaints_section"
+        android:textColor="@color/txt_color"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextComplaint"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/enter_complaint"
+        android:textColorHint="@color/txt_color"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSubmitComplaint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintHeight_max="wrap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintWidth_default="wrap"
+        app:layout_constraintWidth_max="0dp"
+        app:layout_constraintWidth_percent="1.0"
+        app:layout_constraintTop_toBottomOf="@+id/editTextComplaintTopic" />
+
+    <EditText
+        android:id="@+id/editTextComplaintTopic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColorHint="@color/txt_color"
+        android:hint="@string/enter_topic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/editTextComplaint" />
+
+    <Button
+        android:id="@+id/buttonSubmitComplaint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/btn_color"
+        android:radius="8dp"
+        android:text="@string/submit_complaint"
+        android:textColor="@color/background_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextComplaint" />
+
+    <Button
+        android:id="@+id/previousButton"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="640dp"
+        android:backgroundTint="@color/btn_color"
+        app:icon="@drawable/baseline_arrow_back_ios_24"
+        app:iconTint="@color/background_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,6 +25,11 @@
             android:textColor="@color/small_text_color"
             android:textSize="20sp"
             android:textAlignment="center"
+<<<<<<< HEAD
+=======
+            android:maxLines="1"
+            
+>>>>>>> f75e719be28c47b60165a19170b444114a8a8197
             android:padding="8dp"/>
 
         <TextView
@@ -36,6 +41,7 @@
             android:textSize="20sp"
             android:textAlignment="center"
             android:layout_toEndOf="@id/recDate"
+            android:maxLines="1"
 
             android:padding="8dp" />
         

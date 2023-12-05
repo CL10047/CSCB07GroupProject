@@ -5,7 +5,6 @@ import static org.junit.Assert.assertNotNull;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import android.view.View;
 
 import com.google.firebase.database.DataSnapshot;
 
@@ -28,8 +27,6 @@ public class ExampleUnitTest {
     LoginView view;
     @Mock
     DataSnapshot snapshot;
-    @Mock
-    View baseView;
 
 
 
@@ -51,6 +48,13 @@ public class ExampleUnitTest {
         LoginPresenter presenter = new LoginPresenter(view, model);
         presenter.checkDB("k", "");
         verify(view).setWarning("Enter password");
+    }
+
+    @Test
+    public void checkInvalidCharacters(){
+        LoginPresenter presenter = new LoginPresenter(view, model);
+        presenter.checkDB(". $ # [ ] /", "kkk");
+        verify(view).setWarning("Cannot contain characters . $ # [ ] or /");
     }
 
     @Test

@@ -7,6 +7,15 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="true" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -18,9 +27,50 @@
         android:theme="@style/Theme.MaterialComponents"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".StudentActivity"
             android:exported="false" />
         <activity
+=======
+<<<<<<< HEAD
+            android:name=".StudentComplaintActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReviewEventActivity"
+            android:banner="@drawable/app_icon_your_company"
+            android:exported="true"
+            android:icon="@drawable/app_icon_your_company"
+            android:label="@string/title_activity_review_event"
+            android:logo="@drawable/app_icon_your_company"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".DetailsActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".PlaybackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BrowseErrorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EventsStudentsActivity"
+            android:banner="@drawable/app_icon_your_company"
+            android:exported="true"
+            android:icon="@drawable/app_icon_your_company"
+            android:label="@string/title_activity_events_students"
+            android:logo="@drawable/app_icon_your_company"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DetailsActivity"
+=======
+<<<<<<< HEAD
+>>>>>>> f75e719be28c47b60165a19170b444114a8a8197
             android:name=".DetailActivity"
             android:exported="false" />
         <activity
@@ -37,6 +87,7 @@
             android:exported="false" />
         <activity
             android:name=".ViewEventStudent"
+>>>>>>> c360f7c18711afe8b6dfa6fd89eb1d1f7c914d6f
             android:exported="false" />
         <activity
             android:name=".Register"

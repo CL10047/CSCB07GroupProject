@@ -3,7 +3,12 @@
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
+    <string name="events_students_activity_label">Events Activity</string>
+    <string name="rating_event_activity_label">Rating Activity</string>
     <string name="second_fragment_label">Second Fragment</string>
+    <string name="complaints_fragment_label">Complaints Fragment</string>
+    <string name="events_fragment_label">Events Students Fragment</string>
+    <string name="review_fragment_label">Event Rating Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="program_type_title">Program Type</string>
@@ -52,6 +57,51 @@
     <string name="lorem_ipsum">
         Lorem ipsum d
     </string>
+<<<<<<< HEAD
+    <string name="rate_this_event">Rate this event</string>
+    <string name="enter_complaint">Enter your complaint</string>
+    <string name="enter_topic">Enter topic of your complaint</string>
+    <string name="submit_complaint">Submit complaint</string>
+    <string name="complaints_section">Complaints Section</string>
+    <string name="write_review">Write Review</string>
+    <string name="submit_review">Submit review</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="event_name">Event Name</string>
+    <string name="event_info">Event Location | Event Date</string>
+    <string name="event_date">Event Date (DD/MM/YYYY)</string>
+    <string name="max_attendees"># of Max Attendees</string>
+    <string name="event_location">Event Location</string>
+    <string name="event_department">Event Department</string>
+    <string name="event_description">Event Description, Max 100 Characters (Optional)</string>
+    <string name="btn_create">Create Event</string>
+
+    <string name="view_event_title">View Events</string>
+    <string name="search_bar_text">Search Event by Name</string>
+    <string name="btn_search">Search</string>
+    <string name="reviews">reviews</string>
+    <string name="title_activity_events_students">Leanback EventsStudentsActivity</string>
+    <string name="browse_title">Videos by Your Company</string>
+    <string name="related_movies">Related Videos</string>
+    <string name="grid_view">Grid View</string>
+    <string name="error_fragment">Error Fragment</string>
+    <string name="personal_settings">Personal Settings</string>
+    <string name="watch_trailer_1">Watch trailer</string>
+    <string name="watch_trailer_2">FREE</string>
+    <string name="rent_1">Rent By Day</string>
+    <string name="rent_2">From $1.99</string>
+    <string name="buy_1">Buy and Own</string>
+    <string name="buy_2">AT $9.99</string>
+    <string name="movie">Movie</string>
+
+    <!-- Error messages -->
+    <string name="error_fragment_message">An error occurred</string>
+    <string name="dismiss_error">Dismiss</string>
+    <string name="title_activity_rating_event_actvity">Leanback RatingEventActvity</string>
+    <string name="title_activity_review_event">Leanback ReviewEventActivity</string>
+    <string name="failure_to_get_data">Failure to get data.</string>
+=======
     <string name="pageTitle">POst Qualification Checker</string>
     <string name="stream_checkbox">Check this box if you an Out-of-Stream student</string>
     <string name="check_qual_button">Check Qualifications</string>
@@ -74,8 +124,14 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="homepage_title">Home\nPage</string>
     <string name="events_text">Events</string>
+<<<<<<< HEAD
     <string name="announcement">Bulletin\nBoard</string>
     <string name="complaints_txt">Complaints</string>
     <string name="review_txt">Reviews</string>
     <string name="feedback_txt">Event\nFeedback</string>
+=======
+    <string name="announcement">Announcement</string>
+>>>>>>> POStQual_ViewEvents
+>>>>>>> c360f7c18711afe8b6dfa6fd89eb1d1f7c914d6f
+>>>>>>> f75e719be28c47b60165a19170b444114a8a8197
 </resources>
