@@ -1,6 +1,7 @@
 package com.example.cscb07groupproject;
 
 import android.content.Intent;
+import android.media.metrics.Event;
 import android.os.Bundle;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -30,8 +31,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
-
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -50,11 +49,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button btnEventCreationPage = (Button) findViewById(R.id.button_first);
-        btnEventCreationPage.setOnClickListener(new View.OnClickListener() {
+        Button btnViewEvents = (Button) findViewById(R.id.button_first);
+        btnViewEvents.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, EventCreation.class);
+                Intent intent = new Intent(MainActivity.this, ViewEventsAdmin.class);
                 startActivity(intent);
             }
         });
