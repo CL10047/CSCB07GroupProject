@@ -1,5 +1,6 @@
 package com.example.cscb07groupproject;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -42,6 +43,13 @@ public class EventCreation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.event_creation);
         Button btnCreateEvent = findViewById(R.id.btn_create_event);
+
+        Button back = findViewById(R.id.back_btn);
+
+        back.setOnClickListener(view -> {
+            Intent intent = new Intent(EventCreation.this, AdminActivity.class);
+            startActivity(intent);
+        });
 
         Query totalNum = eventDatabase.orderByChild("Event Number");
         totalNum.addValueEventListener(new ValueEventListener() {

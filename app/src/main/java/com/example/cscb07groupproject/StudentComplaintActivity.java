@@ -1,9 +1,11 @@
 package com.example.cscb07groupproject;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,6 +29,12 @@ public class StudentComplaintActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_complaint);
 
+        Button back = findViewById(R.id.back_btn);
+        back.setOnClickListener(view -> {
+            Intent intent = new Intent(StudentComplaintActivity.this, StudentActivity.class);
+            startActivity(intent);
+        });
+
         editTextComplaintView = findViewById(R.id.editTextComplaint);
         editTextComplaintTopicView = findViewById(R.id.editTextComplaintTopic);
         Button buttonSubmitComplaint = findViewById(R.id.buttonSubmitComplaint);
@@ -47,18 +55,19 @@ public class StudentComplaintActivity extends AppCompatActivity {
             if (!TextUtils.isEmpty(complaintText) && !TextUtils.isEmpty(complaintTopicText)) {
                 submitComplaint(complaintText, complaintTopicText);
                 Toast.makeText(this, "Complaint submitted successfully!", Toast.LENGTH_SHORT).show();
+                clearText();
             } else {
                 Toast.makeText(this, "Please enter your complaint and its topic", Toast.LENGTH_SHORT).show();
             }
         });
-        /*
-        previousButton.setOnClickListener(new View.OnClickListener() { @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(StudentComplaintActivity.this, StudentActivity.class);
-                startActivity(intent);
-            }
-        });
-         */
+    }
+
+    private void clearText() {
+        TextView txtComplaintTitle = findViewById(R.id.editTextComplaintTopic);
+        TextView txtComplaintText = findViewById(R.id.editTextComplaint);
+
+        txtComplaintTitle.setText("");
+        txtComplaintText.setText("");
     }
 
     private void submitComplaint(String complaint, String topic) {

@@ -26,13 +26,12 @@ public class LoginPresenter {
         else if (password.equals("")) {
             view.setWarning("Enter password");
             view.setToast("Enter password");
-        } else {
-            if(username.contains(".") || username.contains("$") || username.contains("#") || username.contains("[") || username.contains("]") || username.contains("/")){
+        }
+        else if(username.contains(".") || username.contains("$") || username.contains("#") || username.contains("[") || username.contains("]") || username.contains("/")){
                 view.setWarning("Cannot contain characters . $ # [ ] or /");
-            }
-            else {
+        }
+       else {
                 model.queryDB(this, username, password);
-            }
         }
     }
 

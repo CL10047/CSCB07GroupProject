@@ -62,10 +62,7 @@
     <string name="txt_feedback">Feedback</string>
     <string name="event_creation">Event Creation</string>
 
-    <string name="lorem_ipsum">
-        Lorem ipsum d
-    </string>
-<<<<<<< HEAD
+    <string name="lorem_ipsum">Lorem ipsum d</string>
     <string name="rate_this_event">Rate this event</string>
     <string name="enter_complaint">Enter your complaint</string>
     <string name="enter_topic">Enter topic of your complaint</string>
@@ -74,20 +71,6 @@
     <string name="write_review">Write Review</string>
     <string name="submit_review">Submit review</string>
 
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
-    <string name="event_name">Event Name</string>
-    <string name="event_info">Event Location | Event Date</string>
-    <string name="event_date">Event Date (DD/MM/YYYY)</string>
-    <string name="max_attendees"># of Max Attendees</string>
-    <string name="event_location">Event Location</string>
-    <string name="event_department">Event Department</string>
-    <string name="event_description">Event Description, Max 100 Characters (Optional)</string>
-    <string name="btn_create">Create Event</string>
-
-    <string name="view_event_title">View Events</string>
-    <string name="search_bar_text">Search Event by Name</string>
-    <string name="btn_search">Search</string>
     <string name="reviews">reviews</string>
     <string name="title_activity_events_students">Leanback EventsStudentsActivity</string>
     <string name="browse_title">Videos by Your Company</string>
@@ -109,8 +92,7 @@
     <string name="title_activity_rating_event_actvity">Leanback RatingEventActvity</string>
     <string name="title_activity_review_event">Leanback ReviewEventActivity</string>
     <string name="failure_to_get_data">Failure to get data.</string>
-=======
-    <string name="pageTitle">POst Qualification Checker</string>
+    <string name="pageTitle">POSt Qualification Checker</string>
     <string name="stream_checkbox">Check this box if you an Out-of-Stream student</string>
     <string name="check_qual_button">Check Qualifications</string>
     <string name="a48_title">CSCA48</string>
@@ -126,20 +108,13 @@
     <string name="all_good">Congratulations!\nYou have met all requirements!\n(make sure to meet with an academic advisor to confirm)</string>
     <string name="title_activity_view_events_student">ViewEventsStudent</string>
     <string name="title_activity_view_specific_event_student">ViewSpecificEventStudent</string>
-    <string name="view_event_title">All Events</string>
     <string name="btn_rsvp">RSVP for event</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="homepage_title">Home\nPage</string>
     <string name="events_text">Events</string>
-<<<<<<< HEAD
     <string name="announcement">Bulletin\nBoard</string>
     <string name="complaints_txt">Complaints</string>
     <string name="review_txt">Reviews</string>
     <string name="feedback_txt">Event\nFeedback</string>
-=======
-    <string name="announcement">Announcement</string>
->>>>>>> POStQual_ViewEvents
->>>>>>> c360f7c18711afe8b6dfa6fd89eb1d1f7c914d6f
->>>>>>> f75e719be28c47b60165a19170b444114a8a8197
+    <string name="create_announcement">Create\nAnnouncement</string>
 </resources>

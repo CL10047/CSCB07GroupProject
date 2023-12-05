@@ -14,7 +14,7 @@
         android:id="@+id/textViewHeader"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="52dp"
         android:background="@drawable/ic_launcher_background"
         android:fontFamily="sans-serif-black"
         android:text="@string/complaints_section"
@@ -72,14 +72,15 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextComplaint" />
 
     <Button
-        android:id="@+id/previousButton"
+        android:id="@+id/back_btn"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="640dp"
+        android:layout_marginTop="4dp"
         android:backgroundTint="@color/btn_color"
         app:icon="@drawable/baseline_arrow_back_ios_24"
         app:iconTint="@color/background_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

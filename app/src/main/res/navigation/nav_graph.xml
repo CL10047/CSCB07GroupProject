@@ -13,20 +13,11 @@
             android:id="@+id/action_eventsStudentsActivity_to_ReviewEventActivity"
             app:destination="@id/ReviewEventActivity" />
     </activity>
-
-<<<<<<< HEAD
     <activity
         android:id="@+id/ReviewEventActivity"
         android:name="com.example.cscb07groupproject.ReviewEventActivity"
         android:label="@string/rating_event_activity_label"
         tools:layout="@layout/activity_review_event" />
-
-</navigation>
-=======
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-    </fragment>
     <fragment
         android:id="@+id/postQualFragment"
         android:name="com.example.cscb07groupproject.PostQualFragment"
@@ -38,4 +29,3 @@
         android:label="activity_view_event_student"
         tools:layout="@layout/activity_view_event_student" />
 </navigation>
->>>>>>> c360f7c18711afe8b6dfa6fd89eb1d1f7c914d6f

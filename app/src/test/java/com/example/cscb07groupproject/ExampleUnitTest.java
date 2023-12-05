@@ -68,7 +68,7 @@ public class ExampleUnitTest {
     public void checkWrongUsername(){
         String username = "kasak";
         String password = "kasak";
-     //   when(model.checkChild(snapshot, username)).thenReturn(false);
+        when(model.checkChild(snapshot, username)).thenReturn(false);
 
         LoginPresenter presenter = new LoginPresenter(view, model);
         presenter.checkCredentials(snapshot,username, password);

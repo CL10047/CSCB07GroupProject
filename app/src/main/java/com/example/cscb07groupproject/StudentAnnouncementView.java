@@ -59,6 +59,11 @@ public class StudentAnnouncementView extends AppCompatActivity {
 
         count();
 
+        Button back = findViewById(R.id.back_btn);
+        back.setOnClickListener(view -> {
+            Intent intent = new Intent(StudentAnnouncementView.this, StudentActivity.class);
+            startActivity(intent);
+        });
 
 
     }
@@ -69,6 +74,7 @@ public class StudentAnnouncementView extends AppCompatActivity {
         Query announcements = AnnouncementDatabase.orderByChild("Title");
         SharedPreferences sharepref = getSharedPreferences("Pref", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharepref.edit();
+        getSupportActionBar().hide();
         announcements.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -86,9 +92,9 @@ public class StudentAnnouncementView extends AppCompatActivity {
 
     }
     private void getTitleClicked(int index) {
-        SpecificAnnouncement.getEventClicked(currentpage, index);
+        SpecificAnnouncementStudent.getEventClicked(currentpage, index);
         Intent intent = new Intent(StudentAnnouncementView.this,
-                SpecificAnnouncement.class);
+                SpecificAnnouncementStudent.class);
         startActivity(intent);
     }
     private void visibilityButton() {
@@ -209,7 +215,3 @@ public class StudentAnnouncementView extends AppCompatActivity {
 
     }
 }
-
-
-
-

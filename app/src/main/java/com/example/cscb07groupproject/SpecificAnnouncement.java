@@ -17,9 +17,9 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 public class SpecificAnnouncement extends AppCompatActivity {
-    static int currentpage;
+    static int currentPage;
     static int index;
-    final int pagesize = 5;
+    final int pageSize = 5;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.specific_announcement);
@@ -27,13 +27,13 @@ public class SpecificAnnouncement extends AppCompatActivity {
         getDetails();
     }
     private void returnToList() {
-        AnnouncementView.savePage(currentpage);
+        AnnouncementView.savePage(currentPage);
         Intent intent = new Intent(SpecificAnnouncement.this,
                 AnnouncementView.class);
         startActivity(intent);
     }
     public static void getEventClicked(int page, int eventClicked) {
-        currentpage = page;
+        currentPage = page;
         index = eventClicked;
     }
     private void getDetails(){
@@ -47,7 +47,7 @@ public class SpecificAnnouncement extends AppCompatActivity {
         btnBack.setOnClickListener(view -> returnToList());
 
         Query events = eventDatabase.limitToFirst(1).orderByChild("Announcement number")
-                .startAfter(((currentpage - 1) * pagesize +(index - 1))-1);
+                .startAfter(((currentPage - 1) * pageSize +(index - 1))-1);
         events.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {

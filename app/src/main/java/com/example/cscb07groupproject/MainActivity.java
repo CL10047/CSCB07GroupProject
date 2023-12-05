@@ -13,6 +13,8 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.cscb07groupproject.databinding.ActivityMainBinding;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
         button = findViewById(R.id.log_out_btn);
         textView = findViewById(R.id.user_details);
 
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+//        binding = ActivityMainBinding.inflate(getLayoutInflater());
+//        setContentView(binding.getRoot());
 
 //            binding = ActivityMainBinding.inflate(getLayoutInflater());
 //            setContentView(binding.getRoot());
@@ -57,7 +59,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, StudentActivity.class);
-                Intent intent = new Intent(MainActivity.this, ViewEventsAdmin.class);
                 startActivity(intent);
             }
         });

@@ -45,8 +45,15 @@ public class ReviewEventActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_review_event);
         getDetails();
+        getSupportActionBar().hide();
 
-        editTextReviewView = findViewById(R.id.review);
+        Button back = findViewById(R.id.back_btn);
+        back.setOnClickListener(view -> {
+            Intent intent = new Intent(ReviewEventActivity.this, EventsStudentsActivity.class);
+            startActivity(intent);
+        });
+
+        editTextReviewView = findViewById(R.id.review_events);
         ratingBar = findViewById(R.id.ratingBar);
         Button buttonSubmitReview = findViewById(R.id.buttonSubmitReview);
 
@@ -114,6 +121,7 @@ public class ReviewEventActivity extends AppCompatActivity {
                 newReviewRef.child("Rating").setValue(rating);
                 newReviewRef.child("Review").setValue(review);
                 newReviewRef.child("ReviewNumber").setValue(reviewNumber);
+                clearReview();
             }
 
             @Override
@@ -122,6 +130,12 @@ public class ReviewEventActivity extends AppCompatActivity {
                         Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    private void clearReview() {
+        TextView txtComplaintTitle = findViewById(R.id.review_events);
+
+        txtComplaintTitle.setText("");
     }
 
     private void getDetails() {

@@ -2,6 +2,7 @@ package com.example.cscb07groupproject;
 
 
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.view.View;
@@ -43,7 +44,12 @@ public class AnnouncementCreation extends AppCompatActivity {
         Button btnPostAnnouncement = (Button) findViewById(R.id.button2);
         EditText InputTitle = (EditText) findViewById(R.id.Titleinput);
         EditText InputAnnouncement = (EditText) findViewById(R.id.Announcementinput);
-        Button previous = (Button) findViewById(R.id.button_second);
+
+        Button back = findViewById(R.id.back_btn);
+        back.setOnClickListener(view -> {
+            Intent intent = new Intent(AnnouncementCreation.this, AdminActivity.class);
+            startActivity(intent);
+        });
 
         //Button for going back to home page
 

@@ -1,42 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="deploymentTargetDropDown">
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> c360f7c18711afe8b6dfa6fd89eb1d1f7c914d6f
     <targetSelectedWithDropDown>
       <Target>
         <type value="QUICK_BOOT_TARGET" />
         <deviceKey>
           <Key>
             <type value="VIRTUAL_DEVICE_PATH" />
-<<<<<<< HEAD
-            <value value="$PROJECT_DIR$/../.android/avd/Pixel_3a_API_34_extension_level_7_arm64-v8a.avd" />
-=======
-            <value value="$USER_HOME$/.android/avd/Pixel_2_API_UpsideDownCakePrivacySandbox.avd" />
->>>>>>> c360f7c18711afe8b6dfa6fd89eb1d1f7c914d6f
+            <value value="$USER_HOME$/.android/avd/Pixel_XL_API_34.avd" />
           </Key>
         </deviceKey>
       </Target>
     </targetSelectedWithDropDown>
-<<<<<<< HEAD
-    <timeTargetWasSelectedWithDropDown value="2023-11-28T03:26:35.696243Z" />
-=======
-    <timeTargetWasSelectedWithDropDown value="2023-11-20T15:52:10.363980Z" />
-=======
->>>>>>> f75e719be28c47b60165a19170b444114a8a8197
-    <value>
-      <entry key="app">
-        <State />
-      </entry>
-    </value>
-<<<<<<< HEAD
-=======
->>>>>>> POStQual_ViewEvents
->>>>>>> c360f7c18711afe8b6dfa6fd89eb1d1f7c914d6f
->>>>>>> f75e719be28c47b60165a19170b444114a8a8197
+    <timeTargetWasSelectedWithDropDown value="2023-12-05T01:28:27.858483Z" />
   </component>
 </project>

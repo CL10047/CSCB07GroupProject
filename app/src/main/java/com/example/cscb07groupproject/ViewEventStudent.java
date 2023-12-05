@@ -3,7 +3,9 @@ package com.example.cscb07groupproject;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -40,6 +42,8 @@ public class ViewEventStudent extends AppCompatActivity {
         TextView txtPageNumber = findViewById(R.id.txt_page_number);
         txtPageNumber.setText(Integer.toString(currentPage));
         getEvents();
+        getSupportActionBar().hide();
+        count();
 
         LinearLayout event1 = findViewById(layoutID[0]);
         LinearLayout event2 = findViewById(layoutID[1]);
@@ -62,7 +66,29 @@ public class ViewEventStudent extends AppCompatActivity {
             }
         });
     }
+    private void count(){
+        FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+        DatabaseReference EventDB = firebaseDatabase.getReference("events");
+        SharedPreferences sharepref = getSharedPreferences("Pref", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharepref.edit();
 
+        Query events = EventDB.orderByChild("Event number");
+        events.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                int counts = (int) snapshot.getChildrenCount();
+                editor.putInt("Events count", counts);
+                editor.apply();
+            }
+
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+    }
     private void getEventClicked(int currentPage, int index) {
         ViewSpecificEventStudent.getEventClicked(currentPage, index);
         Intent intent = new Intent(ViewEventStudent.this,

@@ -54,6 +54,12 @@ public class ViewEventsAdmin extends AppCompatActivity {
         event3.setOnClickListener(view -> getEventClicked(3));
         event4.setOnClickListener(view -> getEventClicked(4));
         event5.setOnClickListener(view -> getEventClicked(5));
+
+        Button back = findViewById(R.id.back_btn);
+        back.setOnClickListener(view -> {
+            Intent intent = new Intent(ViewEventsAdmin.this, AdminActivity.class);
+            startActivity(intent);
+        });
     }
     private void getEventClicked(int index) {
         ViewSpecificEventAdmin.getEventClicked(currentPage, index);

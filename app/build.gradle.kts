@@ -39,23 +39,11 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.navigation:navigation-fragment:2.7.5")
     implementation("androidx.navigation:navigation-ui:2.7.5")
-
-    implementation(platform("com.google.firebase:firebase-bom:32.5.0"))
-<<<<<<< HEAD
-    implementation("com.google.firebase:firebase-database:20.3.0")
-    implementation("androidx.leanback:leanback:1.0.0")
-    implementation("com.github.bumptech.glide:glide:4.11.0")
-    implementation("com.google.firebase:firebase-inappmessaging:20.4.0")
-    implementation ("androidx.annotation:annotation:1.7.0")
-    implementation ("com.google.firebase:firebase-auth:22.3.0")
-=======
+    implementation(platform("com.google.firebase:firebase-bom:32.6.0"))
 
     implementation("com.google.firebase:firebase-auth:22.3.0")
 
-    implementation(platform("com.google.firebase:firebase-bom:32.6.0"))
-
     implementation("com.google.firebase:firebase-database:20.3.0")
->>>>>>> c360f7c18711afe8b6dfa6fd89eb1d1f7c914d6f
     testImplementation("junit:junit:4.13.2")
     testImplementation("org.mockito:mockito-core:4.7.0")
 
@@ -65,4 +53,11 @@ dependencies {
     implementation("com.github.bumptech.glide:glide:4.14.2")
     annotationProcessor("com.github.bumptech.glide:compiler:4.14.2")
 
+    implementation("androidx.leanback:leanback:1.0.0")
+
+    implementation("com.google.firebase:firebase-inappmessaging:20.4.0")
+    implementation ("androidx.annotation:annotation:1.7.0")
+
 }
+
+

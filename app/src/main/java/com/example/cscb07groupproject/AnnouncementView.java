@@ -59,6 +59,11 @@ public class AnnouncementView extends AppCompatActivity {
 
         count();
 
+        Button back = findViewById(R.id.back_btn);
+        back.setOnClickListener(view -> {
+            Intent intent = new Intent(AnnouncementView.this, AdminActivity.class);
+            startActivity(intent);
+        });
 
 
     }
@@ -209,7 +214,3 @@ public class AnnouncementView extends AppCompatActivity {
 
     }
 }
-
-
-
-

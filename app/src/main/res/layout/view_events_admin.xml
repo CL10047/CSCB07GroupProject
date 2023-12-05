@@ -7,21 +7,35 @@ android:layout_height="match_parent"
 android:background="@color/background_color"
 tools:context=".MainActivity">
 
-<TextView
-    android:id="@+id/view_events_title"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="16dp"
-    android:gravity="center"
-    android:text="@string/view_event_title"
-    android:textColor="@color/txt_color"
-    android:textSize="42sp"
-    android:textStyle="bold"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="62dp"
+        android:layout_height="45dp"
+        android:layout_margin="25dp"
+        android:layout_marginTop="10dp"
+        app:icon="@drawable/baseline_arrow_back_ios_24"
+        app:iconPadding="0dp"
+        android:backgroundTint="@color/btn_color"
+        app:iconTint="@color/background_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-<LinearLayout
+    <TextView
+        android:id="@+id/view_events_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/view_event_title"
+        android:textColor="@color/txt_color"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.573"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
     android:id="@+id/linear_layout1"
     android:layout_width="340dp"
     android:layout_height="94dp"

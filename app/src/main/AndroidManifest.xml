@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <uses-feature
         android:name="android.hardware.touchscreen"
@@ -26,14 +23,80 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents"
         tools:targetApi="31">
+
         <activity
-<<<<<<< HEAD
-            android:name=".StudentActivity"
+            android:name=".DetailActivity"
             android:exported="false" />
         <activity
-=======
-<<<<<<< HEAD
+            android:name=".ComplaintActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.CSCB07GroupProject" />
+        <activity
+            android:name=".Register"
+            android:exported="false"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+        <activity
+            android:name=".LoginView"
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginPresenter"
+            android:exported="false" />
+        <activity
+            android:name=".SpecificAnnouncement"
+            android:exported="false" />
+        <activity
+            android:name=".AnnouncementCreation"
+            android:exported="false" />
+        <activity
+            android:name=".SpecificAnnouncementStudent"
+            android:exported="false" />
+        <activity
+            android:name=".AnnouncementView"
+            android:exported="false" />
+        <activity
+            android:name=".StudentAnnouncementView"
+            android:exported="false" />
+        <activity
+            android:name=".LoginModel"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.CSCB07GroupProject" />
+        <activity
+            android:name=".EventCreation"
+            android:exported="false"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+        <activity
+            android:name=".PostQualifications"
+            android:exported="false" />
+        <activity
+            android:name=".ViewSpecificEventStudent"
+            android:exported="false" />
+        <activity
+            android:name=".ViewEventStudent"
+            android:exported="false" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <activity
             android:name=".StudentComplaintActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentActivity"
             android:exported="false" />
         <activity
             android:name=".ReviewEventActivity"
@@ -68,62 +131,7 @@
         </activity>
         <activity
             android:name=".DetailsActivity"
-=======
-<<<<<<< HEAD
->>>>>>> f75e719be28c47b60165a19170b444114a8a8197
-            android:name=".DetailActivity"
             android:exported="false" />
-        <activity
-            android:name=".ComplaintActivity"
-            android:exported="false" />
-        <activity
-            android:name=".AdminActivity"
-            android:exported="true" />
-        <activity
-            android:name=".PostQualifications"
-            android:exported="false" />
-        <activity
-            android:name=".ViewSpecificEventStudent"
-            android:exported="false" />
-        <activity
-            android:name=".ViewEventStudent"
->>>>>>> c360f7c18711afe8b6dfa6fd89eb1d1f7c914d6f
-            android:exported="false" />
-        <activity
-            android:name=".Register"
-            android:exported="false"
-            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
-        <activity
-            android:name=".LoginView"
-            android:exported="true"
-            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.CSCB07GroupProject" />
-        <activity
-            android:name=".EventCreation"
-            android:exported="false"
-            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
-        <activity
-            android:name=".LoginPresenter"
-            android:exported="false" />
-        <activity
-            android:name=".LoginModel"
-            android:exported="false" />
-
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
-            android:name=".EventCreation">
-        </activity>
         <activity
             android:name=".ViewEventsAdmin">
         </activity>

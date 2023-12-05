@@ -35,7 +35,7 @@ public class EventsStudentsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_events_students);
-
+        getSupportActionBar().hide();
         // Setting layout for each event
         LinearLayout event1 = findViewById(layoutID[0]);
         LinearLayout event2 = findViewById(layoutID[1]);
@@ -51,6 +51,12 @@ public class EventsStudentsActivity extends AppCompatActivity {
         event5.setOnClickListener(v -> getEventClicked(5));
 
         getEvents();
+
+        Button back = findViewById(R.id.back_btn);
+        back.setOnClickListener(view -> {
+            Intent intent = new Intent(EventsStudentsActivity.this, StudentActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void getEventClicked(int index) {
